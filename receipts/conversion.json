@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "source_model": "kinit/whisper-large-v3-sk",
+  "source_revision": "8654a11704f3564ac53a4b266a567bd4f20c8c51",
+  "source_weight_files": [
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors"
+  ],
+  "converter": {
+    "upstream_repository": "ml-explore/mlx-examples",
+    "upstream_commit": "cfc5d25acdd387fcf72eb4bb41c608b794633e96",
+    "runtime_format": "mlx-whisper-0.4.3",
+    "sharded_hf_input_supported": true
+  },
+  "output": {
+    "dtype": "float16",
+    "quantized": false,
+    "tensor_count": 1259,
+    "model_parameter_count": 1541570560,
+    "alignment_heads_shape": [
+      10,
+      2
+    ],
+    "alignment_heads_dtype": "int64",
+    "weights_file": "weights.safetensors",
+    "weights_bytes": 3083275629,
+    "weights_sha256": "a3e72c9c868ef796dc1a3df36639f07d5eb20308d7bfa9ca9f09cbc7e4f0c0ff"
+  },
+  "environment": {
+    "python": "3.12.11",
+    "machine": "Apple M4 Max",
+    "memory_gb": 64,
+    "macos": "26.5.2",
+    "mlx": "0.32.0",
+    "mlx_whisper": "0.4.3",
+    "transformers": "4.57.6",
+    "torch": "2.13.0",
+    "safetensors": "0.8.0",
+    "numpy": "2.4.6"
+  },
+  "accepted": true,
+  "repository_converter_reproduction": {
+    "completed": true,
+    "output_weights_sha256": "a3e72c9c868ef796dc1a3df36639f07d5eb20308d7bfa9ca9f09cbc7e4f0c0ff",
+    "byte_identical_to_accepted_weights": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "validated_at": "2026-07-11T03:30:22.575287+00:00",
+  "strict_load": true,
+  "tensor_count": 1259,
+  "model_tensor_count": 1258,
+  "parameter_count": 1541570560,
+  "tensor_element_count": 1541570580,
+  "all_model_tensors_float16": true,
+  "weights_bytes": 3083275629,
+  "weights_sha256": "a3e72c9c868ef796dc1a3df36639f07d5eb20308d7bfa9ca9f09cbc7e4f0c0ff",
+  "keyset_sha256": "342a94b57f4766f7b9b24c028461c209353f154fb4b720b9c27a4e2bd6e62955",
+  "dimensions": {
+    "n_mels": 128,
+    "n_audio_ctx": 1500,
+    "n_audio_state": 1280,
+    "n_audio_head": 20,
+    "n_audio_layer": 32,
+    "n_vocab": 51866,
+    "n_text_ctx": 448,
+    "n_text_state": 1280,
+    "n_text_head": 20,
+    "n_text_layer": 32
+  },
+  "alignment_heads": {
+    "shape": [
+      10,
+      2
+    ],
+    "dtype": "int64",
+    "matches_source_generation_config": true
+  },
+  "source_numeric_parity": {
+    "samples": 8,
+    "all_match": true,
+    "checks": [
+      "convolution transpose",
+      "six representative mapped parameter slices",
+      "frozen encoder sinusoid"
+    ]
+  },
+  "tokenizer": {
+    "languages": 100,
+    "slovak_diacritic_sample_matches_hf": true,
+    "slovak_sot_sequence": [
+      50258,
+      50298,
+      50360
+    ]
+  },
+  "environment": {
+    "python": "3.12.11",
+    "machine": "arm64",
+    "mlx": "0.32.0",
+    "mlx_whisper": "0.4.3"
+  }
+}

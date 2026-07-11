@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "fixture": {
+    "kind": "synthetic public Slovak speech",
+    "text": "V Bratislave dnes svieti slnko. Tento krátky záznam overuje slovenský model rozpoznávania reči. Presnosť, diakritika a časové značky musia zostať zachované.",
+    "audio_sha256": "a8913bb6517d0f65b7a014d04eaf142214b9c290bcd62d748f6a09af7194ffbd",
+    "duration_seconds": 12.239864
+  },
+  "source_model": "kinit/whisper-large-v3-sk",
+  "source_revision": "8654a11704f3564ac53a4b266a567bd4f20c8c51",
+  "model_weights_sha256": "a3e72c9c868ef796dc1a3df36639f07d5eb20308d7bfa9ca9f09cbc7e4f0c0ff",
+  "transformers_text": "V Bratislave dnes sviety slnko. Tento krátky záznam overuje slovenský model rozpoznávania reči. Presnosť? Diakritika a časové značky musia zostať zachované.",
+  "mlx_text": "V Bratislave dnes sviety slnko. Tento krátky záznam overuje slovenský model rozpoznávania reči. Presnosť? Diakritika a časové značky musia zostať zachované.",
+  "parity": {
+    "normalized_exact": true,
+    "normalized_character_similarity": 1.0,
+    "word_edit_distance": 0,
+    "word_error_rate_against_transformers": 0.0
+  },
+  "segment_timestamps": {
+    "transformers_end_seconds": 12.220000267028809,
+    "mlx_end_seconds": 12.23,
+    "final_end_absolute_delta_seconds": 0.009999732971190722
+  },
+  "production_mlx_probe": {
+    "word_timestamps": false,
+    "seconds_including_model_load": 1.5966550419998384,
+    "audio_seconds_per_wall_second": 7.66594140752492,
+    "normalized_exact_to_transformers": true
+  },
+  "note": "This receipt measures backend conversion parity, not accuracy against the fixture sentence."
+}

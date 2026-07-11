@@ -1,0 +1,22 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Model weights belong on Hugging Face, not in the GitHub source repository.
+weights.safetensors
+model.safetensors
+*.npz
+*.gguf
+mlx_model/
+models/
+hf-upload/
+
+# Parity audio may contain private speech. Publish receipts, never fixtures.
+fixtures/audio/
+*.m4a
+*.mp3
+*.wav
+*.flac

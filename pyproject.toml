@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "whisper-large-v3-sk-mlx-tools"
+version = "0.1.0"
+description = "Reproducible MLX conversion and validation tools for KInIT Whisper Large V3 Slovak"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = { text = "Apache-2.0" }
+dependencies = [
+  "huggingface-hub>=0.30,<2",
+  "mlx>=0.25",
+  "mlx-whisper==0.4.3",
+  "numpy>=1.26",
+  "safetensors>=0.5",
+  "torch>=2.5",
+  "transformers>=4.53,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "ruff>=0.11",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/whisper_large_v3_sk_mlx_tools"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

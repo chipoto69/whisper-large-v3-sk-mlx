@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "privacy": "No memo filenames, titles, transcript text, or audio are included. Hashes identify private local fixtures only.",
+  "model_weights_sha256": "a3e72c9c868ef796dc1a3df36639f07d5eb20308d7bfa9ca9f09cbc7e4f0c0ff",
+  "decoding": {
+    "language": "sk",
+    "task": "transcribe",
+    "suppress_tokens": [],
+    "suppress_blank": true,
+    "max_initial_timestamp": 1.0,
+    "temperature": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "compression_ratio_threshold": 2.4,
+    "logprob_threshold": -1.0,
+    "no_speech_threshold": 0.6,
+    "condition_on_previous_text": true,
+    "initial_prompt": null,
+    "word_timestamps": false,
+    "fp16": true
+  },
+  "total_audio_seconds": 86.53707482993197,
+  "total_mlx_transcribe_seconds": 15.585763417000635,
+  "aggregate_mlx_audio_seconds_per_wall_second": 5.552315437788506,
+  "total_transformers_transcribe_seconds": 33.78767491599865,
+  "aggregate_transformers_audio_seconds_per_wall_second": 2.5612024220392917,
+  "fixtures": [
+    {
+      "fixture": "private-redacted-1",
+      "audio_sha256": "17d31b9f487379ca50f4de410347576fec40cec0a737227453afe65c1b892567",
+      "duration_seconds": 1.0434467120181405,
+      "normalized_exact": false,
+      "word_edit_distance": 1,
+      "word_error_rate_against_transformers": 0.5,
+      "final_timestamp_delta_seconds": 0.07999996423721312
+    },
+    {
+      "fixture": "private-redacted-2",
+      "audio_sha256": "9da92421739905317854e01449efcc5bef33784adb20ffbfb892a192d80a30ea",
+      "duration_seconds": 3.25,
+      "normalized_exact": true,
+      "word_edit_distance": 0,
+      "word_error_rate_against_transformers": 0.0,
+      "final_timestamp_delta_seconds": 3.814697269177714e-08
+    },
+    {
+      "fixture": "private-redacted-3",
+      "audio_sha256": "364f90af8c51a5a27c52552eac53e91ca407851585b45fc8c75da106121f6982",
+      "duration_seconds": 82.24362811791383,
+      "normalized_exact": true,
+      "word_edit_distance": 0,
+      "word_error_rate_against_transformers": 0.0,
+      "final_timestamp_delta_seconds": 0.010001220703117042
+    }
+  ],
+  "limitation": "The 1.04-second mixed-language fragment differed by one word; the normal-length Slovak clips matched exactly."
+}
